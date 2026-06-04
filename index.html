@@ -1,0 +1,3005 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <h2>Grocify</h2>
+      </div>
+
+
+      <div class="search-section">
+        <div class="search-box">
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="Search in the Grocify" />
+        </div>
+      </div>
+      
+      <div class="icon-container">
+        <div class="item">
+          <i class="fa fa-user"></i>
+          <span>Sign-in</span>
+        </div>
+
+
+        <div class="item">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Cart</span>
+        </div>
+
+        <div class="item">
+          <i class="fa-solid fa-heart"></i>
+          <span>Wishlist</span>
+        </div>
+      </div>
+
+    </nav>
+
+    <div class="sec-nav">
+      <div class="nav-links">
+        <li><a href="">Home</a></li>
+        <li><a href="">Cateogries</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Help & Support</a></li>
+        <li><a href="">Contact</a></li>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="m-container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/eid_ul_adha_1800x600_e61097cb-3b1d-4f57-b53b-0ee0f68339d7.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/Strong_Taste_1800x600_60139444-a618-4c7a-b66b-0bfa387ac2e5.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/Home-Page-Banner-1800-x-600.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- cateogry-section -->
+
+    <section class="cateogries">
+      <div class="heading">
+        <h1>Cateogries</h1>
+      </div>
+
+      <div class="card-container">
+        <div class="dairy">
+          <img
+            src="./assets/Dairy-07_740c160b-5f61-480e-b3fb-2e2eaef1f5b8_533x.png"
+            alt=""
+          />
+          <h3>Dairy</h3>
+        </div>
+
+        <div class="beverages">
+          <img
+            src="./assets/Beverages_e1d4af97-1b88-4a92-b627-56e6920d3365_533x.png"
+            alt=""
+          />
+          <h3>Beverages</h3>
+        </div>
+
+        <div class="snacks">
+          <img src="./assets/Snacks_533x.png" alt="" />
+          <h3>Snacks</h3>
+        </div>
+
+        <div class="fruit-vegetables">
+          <img src="./assets/Fresh_Food_533x.png" alt="" />
+          <h3>Fruit & Vegetables</h3>
+        </div>
+
+        <div class="Beauty">
+          <img src="./assets/Beauty_and_Personal_Care_533x.png" alt="" />
+          <h3>Beauty & Personal Care</h3>
+        </div>
+
+        <div class="Oil">
+          <img src="./assets/Oil_And_Ghee_533x.png" alt="" />
+          <h3>Oil & Ghee</h3>
+        </div>
+
+        <div class="house-hold">
+          <img src="./assets/Household-12_533x.png" alt="" />
+          <h3>Household</h3>
+        </div>
+
+        <div class="Spicy">
+          <img
+            src="./assets/Spices_and_recipe_mix_1f0ec98d-933e-4f38-81aa-50155fca3a0b_533x.png"
+            alt=""
+          />
+          <h3>Spices & Recipy Mix</h3>
+        </div>
+
+        <div class="Tea">
+          <img
+            src="./assets/Tea_And_Coffee_5016b1ca-ff08-44bc-b934-a8660ed5ab25_533x.png"
+            alt=""
+          />
+          <h3>Tea & Coffee</h3>
+        </div>
+
+        <div class="Grocerry">
+          <img
+            src="./assets/Grocery_348ec70d-361b-4590-9aca-7fd541cd7672_533x.png"
+            alt=""
+          />
+          <h3>Grocerry</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- dairy-section -->
+
+    <section class="dairy">
+      <div class="heading">
+        <h1>Dairy</h1>
+      </div>
+
+      <div class="c-container">
+        <div class="product-card">
+          <div class="img-box">
+            <img
+              src="./assets/orgsize_43109WhatsApp_20Image_202024-07-15_20at_2011.55.35_20AM_20_2_533x.jpg"
+              alt=""
+            />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Olpers Liquid Milk 1.5ltr</h3>
+            <p class="unit">Rs.560.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.560.00</span>
+              <span class="old">Rs.650.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card2 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/olpers2.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Olpers Liquid Milk 250ml</h3>
+            <p class="unit">Rs.95.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.95.00</span>
+              <!-- <span class="old">Rs 650</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card3 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/olpers3.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Olpers Milk 1000 ml</h3>
+            <p class="unit">Rs.379.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.379.00</span>
+              <!-- <span class="old">Rs 650</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card4 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/olpers4.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Olpers Milk 1000ml</h3>
+            <p class="unit">Rs.4,440.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.4,440.00</span>
+              <span class="old">Rs.4,600.00</span> -
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card 5 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/olpers5.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Olpers Milk 250ml - 27pcs</h3>
+            <p class="unit">Rs.2,560.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.2,560.00</span>
+              <!-- <span class="old">Rs 4,600.00</span> - -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-6 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/olpers6.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Olpers ProCal Milk 1000ml</h3>
+            <p class="unit">Rs.370.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.370.00</span>
+              <!-- <span class="old">Rs 4,600.00</span> - -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-7 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/olpers7.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Olpers ProCal Milk 200ml</h3>
+            <p class="unit">Rs.90.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.90.00</span>
+              <!-- <span class="old">Rs 4,600.00</span> - -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-8 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/olpers8.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Olpers ProCal Milk 200ml</h3>
+            <p class="unit">Rs.2160.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.2160.00</span>
+              <span class="old">Rs 22,00.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-9 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/TARANG1.png" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Tarang Milk 170ml</h3>
+            <p class="unit">Rs.47.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.47.00</span>
+              <span class="old">Rs 50.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-10 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/tarang2.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Tarang Milk 225ml - Carton</h3>
+            <p class="unit">Rs.1620.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.1620.00</span>
+              <!-- <span class="old">Rs 50.00</span>  -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-11 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/tarang3.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>TARANG MILK 220ML</h3>
+            <p class="unit">Rs.60.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.60.00</span>
+              <!-- <span class="old">Rs 50.00</span>  -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-12 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/cream1.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Olpers Cream 200 ml</h3>
+            <p class="unit">Rs.230.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.230.00</span>
+              <span class="old">Rs.240.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-13 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/cream2.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Nestle Milk Pak Cream</h3>
+            <p class="unit">Rs.235.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.235.00</span>
+              <span class="old">Rs.240.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+            <br />
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-14 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/cream3.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Nestle Whipping Cream</h3>
+            <p class="unit">Rs.250.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.250.00</span>
+              <!-- <span class="old">Rs 50.00</span>  -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+            <br />
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-15 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/every-day.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Nestle Everyday 560gm</h3>
+            <p class="unit">Rs.1250.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.1250.00</span>
+              <span class="old">Rs.1275.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+            <br />
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-16 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/bread1.jfif" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Dawn Bread</h3>
+            <p class="unit">Rs.200.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.220.00</span>
+              <!-- <span class="old">Rs.1275.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+            <br />
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-17 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/blue-band1.jfif" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Blue Band 500G</h3>
+            <p class="unit">Rs.1000.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.1000.00</span>
+              <!-- <span class="old">Rs.1275.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-18 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/blue-band2.jfif" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Blue Band 100GM</h3>
+            <p class="unit">Rs.100.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.100.00</span>
+              <!-- <span class="old">Rs.1275.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-19 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/blue-band3.jfif" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Blue Band 25GM</h3>
+            <p class="unit">Rs.50.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.50.00</span>
+              <!-- <span class="old">Rs.1275.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-20 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/eggs.webp" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>12 Eggs Box</h3>
+            <p class="unit">Rs.300.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.300.00</span>
+              <!-- <span class="old">Rs.1275.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------- -->
+
+    <!-- beverages-section -->
+
+    <section class="beverage">
+      <div class="b-banner">
+        <img
+          src="./assets/Beverages_77eeabd7-365a-40b1-8b08-a8c9c72df88d.png"
+          alt=""
+        />
+      </div>
+      <div class="heading">
+        <h1>Beverages</h1>
+      </div>
+
+      <div class="c-container">
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-1.png" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>7up Pet Bottle 1 Litre</h3>
+            <p class="unit">Rs.145.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.145.00</span>
+              <span class="old">Rs.150.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card2 -->
+
+        <div class="product-card">
+          <div class="img-box imr">
+            <img src="./assets/beverage-2.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Mountain Dew 300 ml</h3>
+            <p class="unit">Rs.70.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.70.00</span>
+              <!-- <span class="old">Rs 650</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card3 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-3.png" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Mirinda Pet Bottles 1 litre</h3>
+            <p class="unit">Rs.155.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.155.00</span>
+              <span class="old">Rs.160.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card4 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-4.png" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Mirinda Pet Bottles 500 ml</h3>
+            <p class="unit">Rs.90.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.90.00</span>
+              <span class="old">Rs.100.00</span> -
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card 5 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-5.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Mountain Dew 500 ml</h3>
+            <p class="unit">Rs.90.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.90.00</span>
+              <span class="old">Rs.100.00</span> -
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-6 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-6.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Pepsi Slim Can 250 ml</h3>
+            <p class="unit">Rs.100.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.100.00</span>
+              <!-- <span class="old">Rs 4,600.00</span> - -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-7 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-7.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Sting Berry Blast 300 ml</h3>
+            <p class="unit">Rs.90.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.90.00</span>
+              <!-- <span class="old">Rs 4,600.00</span> - -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-8 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-8.png" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Mountain Dew 1.5 Litre</h3>
+            <p class="unit">Rs.200.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.200.00</span>
+              <span class="old">Rs 210.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-9 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-9.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Pepsi 1.5 Litre</h3>
+            <p class="unit">Rs.200.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.200.00</span>
+              <span class="old">Rs.210.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-10 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-10.png" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Mirinda 1.5 Litre</h3>
+            <p class="unit">Rs.200.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.200.00</span>
+              <span class="old">Rs.210.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-11--->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-11.png" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>7up 1.5 Litre</h3>
+            <p class="unit">Rs.200.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.200.00</span>
+              <span class="old">Rs.210.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-12 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-12.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Pepsi 1 Litre</h3>
+            <p class="unit">Rs.160.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.160.00</span>
+              <!-- <span class="old">Rs.240.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-13 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-13.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Mountain Dew 1 Litre</h3>
+            <p class="unit">Rs.160.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.160.00</span>
+              <!-- <span class="old">Rs.240.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-14 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-14.png" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Mirinda 2.25 litre</h3>
+            <p class="unit">Rs.250.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.250.00</span>
+              <span class="old">Rs.260.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-15 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-15.png" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>7up 2.25 Litre</h3>
+            <p class="unit">Rs.250.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.250.00</span>
+              <span class="old">Rs.260.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-16 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-16.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Pepsi 2.25 litre</h3>
+            <p class="unit">Rs.250.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.250.00</span>
+              <span class="old">Rs.260.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-17 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-17.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Mountain Dew 2.25 Litre</h3>
+            <p class="unit">Rs.250.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.250.00</span>
+              <span class="old">Rs.260.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-18 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-18.png" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>7up Pet Bottle 500 ml</h3>
+            <p class="unit">Rs.90.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.90.00</span>
+              <span class="old">Rs.100.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-19 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-19.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Pepsi Pet Bottles 500 ml</h3>
+            <p class="unit">Rs.90.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.90.00</span>
+              <span class="old">Rs.100.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-20 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-20.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Sting Pet Bottle 500 ml</h3>
+            <p class="unit">Rs.110.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.110.00</span>
+              <span class="old">Rs.120.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-21 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-21.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>7up Slim Can 250 ml</h3>
+            <p class="unit">Rs.100.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.100.00</span>
+              <!-- <span class="old">Rs.120.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-22 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-22.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Mountain Dew Can 250 ml</h3>
+            <p class="unit">Rs.100.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.100.00</span>
+              <!-- <span class="old">Rs.120.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-23 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-23.png" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Mirinda Slim Can 250 ml</h3>
+            <p class="unit">Rs.100.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.100.00</span>
+              <!-- <span class="old">Rs.120.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-24 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-24.png" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>string Slim Can 250 ml</h3>
+            <p class="unit">Rs.120.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.120.00</span>
+              <!-- <span class="old">Rs.120.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-25 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-25.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>7up 345ml 12 Pcs Pack</h3>
+            <p class="unit">Rs.800.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.800.00</span>
+              <span class="old">Rs.840.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-26 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-26.png" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>7up 1-Litre Bottle 6-Pcs</h3>
+            <p class="unit">Rs.900.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.900.00</span>
+              <!-- <span class="old">Rs.120.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-27---->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-27.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Mirinda 1-Litre Bottle 6-Pcs</h3>
+            <p class="unit">Rs.900.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.900.00</span>
+              <!-- <span class="old">Rs.120.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-28- -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-28.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>MountainDew 300ml 12 Pcs</h3>
+            <p class="unit">Rs.800.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.800.00</span>
+              <span class="old">Rs.840.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-29 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-29.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Pepsi 300ml 12 Pcs</h3>
+            <p class="unit">Rs.800.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.800.00</span>
+              <span class="old">Rs.840.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-30 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-30.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Mirinda 500 ml 12 Pcs</h3>
+            <p class="unit">Rs.1080.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.1080.00</span>
+              <span class="old">Rs.1200.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-31 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-31.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>7UP 500 ml 12 Pcs</h3>
+            <p class="unit">Rs.1080.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.1080.00</span>
+              <span class="old">Rs.1200.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-32 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-32.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Pepsi 500 ml 12 Pcs</h3>
+            <p class="unit">Rs.1080.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.1080.00</span>
+              <span class="old">Rs.1200.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-33 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-33.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Dew 500 ml 12 Pcs</h3>
+            <p class="unit">Rs.1080.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.1080.00</span>
+              <span class="old">Rs.1200.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-34 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-34.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Sting 500 ml 12-Pcs Case</h3>
+            <p class="unit">Rs.1300.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.1300.00</span>
+              <span class="old">Rs.1320.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-35--->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-35.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Qarshi Joshanda Zinc</h3>
+            <p class="unit">Rs.750.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.750.00</span>
+              <!-- <span class="old">Rs.840.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div><br>
+          
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-36--->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-36.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Qarshi Joshanda Choclate</h3>
+            <p class="unit">Rs.750.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.750.00</span>
+              <!-- <span class="old">Rs.840.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-37 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-37.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Slice Mango Juice 200 ml</h3>
+            <p class="unit">Rs.60.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.60.00</span>
+              <!-- <span class="old">Rs.840.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-38 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-38.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Slice Juice 200ml-24pcs</h3>
+            <p class="unit">Rs.1040.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.1040.00</span>
+              <span class="old">Rs.1080.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-39 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-39.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Slice Mango Juice 1 Litre</h3>
+            <p class="unit">Rs.160.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.160.00</span>
+              <!-- <span class="old">Rs.840.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-40--->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-40.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Slice Juice 1 litre 6-Pcs</h3>
+            <p class="unit">Rs.960.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.960.00</span>
+              <span class="old">Rs.940.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-41--->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-41.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Slice Juice 345 ml 12-Pcs</h3>
+            <p class="unit">Rs.780.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.780.00</span>
+              <!-- <span class="old">Rs.840.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-42--->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-42.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Slice Mango Juice 345 ml</h3>
+            <p class="unit">Rs.100.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.100.00</span>
+              <!-- <span class="old">Rs.840.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-43-->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-43.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Gatorade Hydration Lemon</h3>
+            <p class="unit">Rs.160.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.160.00</span>
+              <!-- <span class="old">Rs.840.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-44--->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-44.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Gatorade Tropical Fruit</h3>
+            <p class="unit">Rs.160.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.160.00</span>
+              <!-- <span class="old">Rs.840.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-45 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-45.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Aquafina Water 1.5 Litre</h3>
+            <p class="unit">Rs.100.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.100.00</span>
+              <!-- <span class="old">Rs.840.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-46 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-46.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Aquafina Water 500Ml</h3>
+            <p class="unit">Rs.50.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.50.00</span>
+              <!-- <span class="old">Rs.840.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-47 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-47.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Slice Mango Juice 1 Litre</h3>
+            <p class="unit">Rs.32.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.32.00</span>
+              <span class="old">Rs.35.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-48 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-48.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Aquafina Water 1.5L 6-Pcs</h3>
+            <p class="unit">Rs.520.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.520.00</span>
+              <span class="old">Rs.540.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-49 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-49.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Aquafina 500 ml 12-pcs</h3>
+            <p class="unit">Rs.540.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.540.00</span>
+              <!-- <span class="old">Rs.840.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- card-50 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-50.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Aquafina 330 ml 12-pcs</h3>
+            <p class="unit">Rs.405.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.405.00</span>
+              <span class="old">Rs.420.00</span>
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+
+             <!-- card-51--->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-51.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Jam-E-Shireen 800 ml</h3>
+            <p class="unit">Rs.500.00</p>
+
+            <div class="price-row">
+              <span class="price">Rs.500.00</span>
+              <!-- <span class="old">Rs.420.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+
+
+             <!-- card-52 -->
+
+        <div class="product-card">
+          <div class="img-box">
+            <img src="./assets/beverage-52.jpg" alt="" />
+            <span class="badge">Fresh</span>
+          </div>
+
+          <div class="content">
+            <h3>Jam-E-Shireen Sugar free</h3>
+            <p class="unit">Rs.500</p>
+
+            <div class="price-row">
+              <span class="price">Rs.500</span>
+              <!-- <span class="old">Rs.420.00</span> -->
+            </div>
+
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <span>(4.0)</span>
+            </div>
+
+            <div class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            <br />
+
+            <button class="btn-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+  <div class="container">
+
+    <div class="footer-box">
+      <h2>Grocify</h2>
+      <p>
+        Fresh groceries delivered to your doorstep with quality and freshness guaranteed.
+      </p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Customer Support</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Customer Support</h3>
+      <ul>
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Help Center</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact Us</h3>
+      <p><i class="fa fa-map-marker"></i> Karachi, Pakistan</p>
+      <p><i class="fa fa-phone"></i> +92 300 1234567</p>
+      <p><i class="fa fa-envelope"></i> support@Grocify.com</p>
+
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-footer">
+    <p>© 2026 Grocify. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+  
+
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+

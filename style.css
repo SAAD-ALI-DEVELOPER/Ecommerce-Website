@@ -1,0 +1,767 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f0f0;
+}
+/* colour theme codes */
+
+/* Primary #2ECC71 (Fresh Green) */
+/* Secondary: #FFFFFF (White) */
+/* Accent/Button: #FF8C42 (Orange) */
+/* Text: #222222 */
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 12px 40px;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    background-color: #2ECC71; 
+    z-index: 1000;
+    color: #FFFFFF;
+    height: 80px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.logo h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+}
+
+
+.search-box{
+    background-color: #FFFFFF;
+    width: 600px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.seach-box input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.search-box input{
+    padding: 10px 15px 10px 35px;
+    width:  100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: white;
+} 
+
+
+.search-box{
+    position: relative;
+}
+
+.search-box i{
+    position: absolute;
+    left: 550px;
+    top: 50%;
+    transform: translateY(-50%);
+    color:#2ECC71;
+}
+
+
+
+
+
+.icon-container{
+    display: flex;
+    gap: 60px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item span{
+    margin-top: 8px;
+}
+
+.icon-container i{
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.sec-nav{
+    background-color:white;
+     padding: 12px 40px;
+    height: 50px;
+    width: 100%;
+    animation: fadeUp 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+
+}
+
+@keyframes fadeUp{
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 80px;
+}
+
+.nav-links a{
+     text-decoration: none;
+     color:#2ECC71;
+      font-family: "Inter", sans-serif;
+     font-weight: 500;
+}
+
+
+.nav-links li {
+  list-style: none;
+  position: relative; /* IMPORTANT */
+  cursor: pointer;
+}
+
+.nav-links li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.1px; /* adjust if needed */
+  width: 0%;
+  height: 1.2px;
+  background:#2ECC71;
+  transition: 0.3s ease;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+
+/* hero-section */
+
+.hero{
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 25px 0;
+}
+
+.m-container{
+    width: 94%;
+    margin: auto;
+}
+
+/* carousel main box */
+#carouselExampleIndicators{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* images */
+.carousel-item img{
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+}
+
+/* arrows */
+.carousel-control-prev,
+.carousel-control-next{
+    width: 6%;
+}
+
+/* dots */
+.carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* responsive */
+@media screen and (max-width: 768px){
+
+    .carousel-item img{
+        height: 220px;
+    }
+
+}
+
+.carousel-item img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+/* cateogry section */
+
+.cateogries .heading h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 38px;
+    margin-top: 20px;
+}
+
+
+.card-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card-container .dairy img{
+    width: 220px;
+    height: 220px;
+    margin-left: 38px;
+    margin-top: 10px;
+}
+
+.card-container .dairy h3{
+     font-family: "Poppins", sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+     margin-left: 118px;
+     margin-top: 20px;  
+}
+
+
+.card-container .beverages img{
+    width: 220px;
+    height: 220px;
+    margin-left: 38px;
+    margin-top: 10px;
+}
+
+.card-container .beverages h3{
+    font-family: "Poppins", sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+     margin-left: 95px;
+     margin-top: 20px;  
+}
+
+.card-container .snacks img{
+    width: 220px;
+    height: 220px;
+    margin-left: 38px;
+    margin-top: 10px;
+}
+
+.card-container .snacks h3{
+    font-family: "Poppins", sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+     margin-left: 115px;
+     margin-top: 20px;  
+}
+
+.card-container .fruit-vegetables img{
+    width: 220px;
+    height: 220px;
+    margin-left: 38px;
+    margin-top: 10px;
+}
+
+.card-container .fruit-vegetables h3{
+     font-family: "Poppins", sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+     margin-left: 65px;
+     margin-top: 20px;  
+}
+
+.card-container .Beauty img{
+    width: 220px;
+    height: 220px;
+    margin-left: 38px;
+    margin-top: 10px;
+}
+
+.card-container .Beauty h3{
+    font-family: "Poppins", sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+     margin-left: 35px;
+     margin-top: 20px;  
+}
+
+
+.card-container .Oil img{
+    width: 220px;
+    height: 220px;
+    margin-left: 38px;
+    margin-top: 20px;
+}
+
+.card-container .Oil h3{
+    font-family: "Poppins", sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+     margin-left: 95px;
+     margin-top: 20px;  
+}
+
+.card-container .house-hold img{
+    width: 220px;
+    height: 220px;
+    margin-left: 38px;
+    margin-top: 20px;
+}
+
+.card-container .house-hold h3{
+    font-family: "Poppins", sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+     margin-left: 95px;
+     margin-top: 20px;  
+}
+
+.card-container .Spicy img{
+    width: 220px;
+    height: 220px;
+    margin-left: 38px;
+    margin-top: 20px;
+}
+
+.card-container .Spicy h3{
+    font-family: "Poppins", sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+     margin-left: 68px;
+     margin-top: 20px;  
+}
+
+.card-container .Tea img{
+    width: 220px;
+    height: 220px;
+    margin-left: 38px;
+    margin-top: 20px;
+}
+
+.card-container .Tea h3{
+    font-family: "Poppins", sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+     margin-left: 95px;
+     margin-top: 20px;  
+}
+
+.card-container .Grocerry img{
+    width: 220px;
+    height: 220px;
+    margin-left: 38px;
+    margin-top: 20px;
+}
+
+.card-container .Grocerry h3{
+    font-family: "Poppins", sans-serif;
+     font-weight: 400;
+     font-size: 18px;
+     margin-left: 115px;
+     margin-top: 20px;  
+}
+
+
+.card-container > div img{
+    transition: 0.3s ease;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.card-container > div img:hover{
+    transform: scale(1.1);
+    z-index: 100;
+}
+
+
+/* dairy-section */
+
+.c-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.dairy .heading h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 38px;
+    margin-top: 120px;
+}
+
+/* CARD */
+.product-card{
+  width: 280px;
+  background:#fff;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 5px 18px rgba(0,0,0,0.1);
+  transition:0.3s;
+  margin-left: 38px;
+  margin-top: 50px;
+}
+
+/* HOVER EFFECT */
+.product-card:hover{
+  transform: translateY(-10px) scale(1.02);
+  box-shadow:0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* IMAGE */
+.img-box{
+  position:relative;
+  overflow:hidden;
+}
+
+.img-box img{
+  width:100%;
+  height:180px;
+  object-fit:contain;
+  transition:0.4s;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+/* image zoom on hover */
+.product-card:hover img{
+  transform: scale(1.1);
+}
+
+/* BADGE */
+.badge{
+  position:absolute;
+  top:10px;
+  left:10px;
+  background:green;
+  color:white;
+  padding:5px 10px;
+  font-size:12px;
+  border-radius:20px;
+}
+
+/* CONTENT */
+.content{
+  padding:15px;
+}
+
+h3{
+font-family: 'Poppins', sans-serif;
+  margin:5px 0;
+  font-size:  18px;
+}
+
+.unit{
+  color:gray;
+  font-size:13px;
+}
+
+/* PRICE */
+.price-row{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.price{
+  /* font-size:18px;
+  font-weight:bold;
+  color:#000; */
+
+  font-size: 22px;
+   font-weight: bold;
+   color: #000;
+}
+
+.old{
+  /* text-decoration:line-through;
+  color:gray;
+  font-size:13px; */
+    color: #999;
+   text-decoration: line-through;
+   margin-left: 8px;
+   font-size: 14px;
+}
+
+/* RATING */
+.rating{
+  font-size:13px;
+  margin:5px 0;
+  color:#f7b500;
+}
+
+/* QUANTITY */
+.qty{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  margin:10px 0;
+  margin-top: 17px;
+
+  
+}
+
+.qty button{
+width:30px;
+  height:30px;
+  border:none;
+  background:#eee;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:18px; 
+}
+
+
+.qty button:hover{
+    transition: 0.2s all ease;
+   background: green;
+   color: white;
+}
+
+
+/* BUTTON */
+.btn-cart{
+  width:100%;
+  padding:10px;
+  border:none;
+ background:green;
+  color:white;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn-cart:hover{
+  background:darkgreen;
+}
+
+
+
+/* beverage-section */
+
+
+.b-banner img{
+    transition: 0.4s ease;
+}
+
+.b-banner img:hover{
+    transform: scale(1.03);
+}
+
+
+.c-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.beverage .heading h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 38px;
+    margin-top: 120px;
+}
+
+.beverage .product-card{
+    height: 470px;
+}
+
+.beverage .b-banner{
+     width: 94%;
+    margin: auto;
+    position: relative;
+    top: 70px;
+}
+
+
+.beverage .b-banner img{
+    width: 100%;
+    height: 420px;
+    object-fit: contain;
+    display: block;
+}
+
+
+
+/* footer */
+
+
+
+.footer{
+  background: #111827; 
+  color: white;
+  padding-top: 70px;
+  margin-top: 80px;
+}
+
+/* Footer Grid */
+.container{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 40px;
+}
+
+/* Logo */
+.footer-box h2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #2ECC71;
+}
+
+/* Headings */
+.footer-box h3{
+  font-size: 22px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.footer-box h3::after{
+  content: "";
+  width: 55px;
+  height: 3px;
+  background: #2ECC71;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-radius: 10px;
+}
+
+/* Paragraph */
+.footer-box p{
+  color: #cbd5e1;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+/* Links */
+.footer-box ul{
+  list-style: none;
+}
+
+.footer-box ul li{
+  margin-bottom: 12px;
+}
+
+.footer-box ul li a{
+  text-decoration: none;
+  color: #d1d5db;
+  transition: 0.3s ease;
+}
+
+.footer-box ul li a:hover{
+  color: #2ECC71;
+  padding-left: 6px;
+}
+
+/* Social Icons */
+.socials{
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.socials a{
+  width: 42px;
+  height: 42px;
+  background: #1f2937;
+  border: 1px solid #374151;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.socials a:hover{
+  background: #2ECC71;
+  transform: translateY(-5px);
+  border-color: #2ECC71;
+}
+
+/* Bottom Footer */
+.bottom-footer{
+  margin-top: 50px;
+  border-top: 1px solid #374151;
+  padding: 20px;
+  text-align: center;
+}
+
+.bottom-footer p{
+  color: #9ca3af;
+  font-size: 15px;
+}
+
+
+@media screen and (max-width: 768px){
+    .navbar{
+        display: none;
+    }
+    .sec-nav{
+        display: none;
+    }
+
+    .cateogries>div{
+        justify-content: center;
+    }
+     .dairy>div{
+        justify-content: center;
+     }   
+     .beverage>div{
+        justify-content: center;
+     } 
+}
+
+@media screen and (max-width: 1068px) {
+
+     .navbar{
+        display: none;
+    }
+
+    .sec-nav{
+        display: none;
+    }
+}
+
+
