@@ -433,6 +433,8 @@ body{
   margin-top: 50px;
 }
 
+
+
 /* HOVER EFFECT */
 .product-card:hover{
   transform: translateY(-10px) scale(1.02);
@@ -744,12 +746,15 @@ width:30px;
 
     .cateogries>div{
         justify-content: center;
+        align-items:center;
     }
      .dairy>div{
         justify-content: center;
+        align-items: center;
      }   
      .beverage>div{
         justify-content: center;
+        align-items: center;
      } 
 }
 
@@ -762,6 +767,23 @@ width:30px;
     .sec-nav{
         display: none;
     }
+}
+
+@media screen and (max-width: 879px){
+
+    
+    .cateogries>div{
+        justify-content: center;
+        align-items:center;
+    }
+     .dairy>div{
+        justify-content: center;
+        align-items: center;
+     }   
+     .beverage>div{
+        justify-content: center;
+        align-items: center;
+     } 
 }
 
 
